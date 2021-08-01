@@ -19,12 +19,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftJWT",
+    name: "SwiftJWT2",
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "SwiftJWT",
-            targets: ["SwiftJWT"]
+            name: "SwiftJWT2",
+            targets: ["SwiftJWT2"]
         )
     ],
     dependencies: [
@@ -35,8 +35,8 @@ let package = Package(
         .package(url: "https://github.com/Kitura/KituraContracts.git", from: "1.2.200")
     ],
     targets: [
-        .target(name: "SwiftJWT", dependencies: ["CryptorRSA", "LoggerAPI", "KituraContracts", "Cryptor", "CryptorECC"]),
-        .testTarget(name: "SwiftJWTTests", dependencies: ["SwiftJWT"])
+        .target(name: "SwiftJWT2", dependencies: ["CryptorRSA", "LoggerAPI", "KituraContracts", "Cryptor", "CryptorECC"]),
+        .testTarget(name: "SwiftJWTTests", dependencies: ["SwiftJWT2"])
 	]
 )
 

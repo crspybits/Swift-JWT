@@ -17,7 +17,7 @@
 import XCTest
 import Foundation
 
-@testable import SwiftJWT
+@testable import SwiftJWT2
 
 let rsaPrivateKey = read(fileName: "rsa_private_key")
 let rsaPublicKey = read(fileName: "rsa_public_key")
